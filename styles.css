@@ -1,0 +1,154 @@
+:root{
+    --font-family: 'Dancing Script', cursive;
+}
+
+#animation-wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, #000022, #000055, #0066aa);
+}
+
+.stars{
+    border-radius: 50%;
+    background-color: #fff;
+    
+    animation-name: breathing;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes breathing{
+    50%{
+        transform: scale(1.8);
+    }
+}
+
+.large{
+    width: 30px;
+    height: 30px;
+}
+
+.small{
+    width: 20px;
+    height: 20px;
+}
+
+.star{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.star-1{
+
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.star-2{
+    margin-top: -5%;
+    margin-left: 37%;
+}
+
+.star-3{
+    margin-top: 10%;
+    margin-left: 55%;
+}
+
+.star-4{
+    margin-top: -10%;
+    margin-left: 75%;
+}
+
+.star-5{
+    margin-top: -5%;
+    margin-left: 90%;
+}
+
+.star-6{
+    margin-top: 20%;
+    margin-left: 87%;
+}
+
+.star-7{
+    margin-top: 10%;
+    margin-left: 75%;
+}
+
+.star-8{
+    margin-top: 3%;
+    margin-left: 50%;
+}
+
+.star-9{
+    margin-top: -15%;
+    margin-left: 20%;
+}
+
+#aurora-boreal{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, #0066aa, #009A9C, #00E5BA);
+}
+
+.clip-art{
+    display: block;
+    align-self: flex-end;
+    max-width: 100%;
+    height: auto;
+}
+
+#header{
+    margin: 20px 0 20px 0;
+}
+
+#title{
+    margin: auto;
+    width: 80vw;
+    padding: 10px 0;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 5rem;
+    color: #0066aa;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+#title:hover{
+    text-shadow: 3px 3px 8px #00E5BA;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.navbar-ulist{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5px;
+}
+
+.ulist-item{
+    list-style: none;
+}
+
+.link{
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+#main{
+    width: 100%;
+    height: 10000px;
+}

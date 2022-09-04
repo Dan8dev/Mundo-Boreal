@@ -104,7 +104,7 @@
     margin: 20px 0 20px 0;
 }
 
-#title{
+#header-title{
     margin: auto;
     width: 80vw;
     padding: 10px 0;
@@ -113,12 +113,12 @@
     font-size: 5rem;
     color: #0066aa;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: .7s;
     transition-timing-function: ease-out;
     cursor: pointer;
 }
 
-#title:hover{
+#header-title:hover{
     text-shadow: 3px 3px 8px #00E5BA;
 }
 
@@ -172,7 +172,7 @@
     padding: 2px;
 }
 
-.article-title{
+.article-title, #gallery-title, #videos-title, #references-title{
     margin: 0 auto;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -199,10 +199,6 @@
     height: auto;
 }
 
-span{
-    color: #0022DD;
-}
-
 .article-list{
     padding: 5px 0 5px 20px;
 }
@@ -211,4 +207,63 @@ span{
     list-style-type: square;
     margin: 5px 0 5px 0;
     font-family: 'Manrope', sans-serif;
+}
+
+#gallery-section, #videos-section{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gallery-img{
+    max-width: 30%;
+    height: auto;
+    margin: 5px;
+}
+
+.gallery-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+iframe{
+    width: 100%;
+    max-width: 760px;
+    margin: 5px;
+}
+
+.videos-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#references-section{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.references-list{
+    margin: 20px auto;
+}
+
+.references-p, .reference{
+    margin: 10px auto;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+}
+
+.reference-link{
+    color: #0022DD;
+}
+
+span{
+    color: #0022DD;
 }
